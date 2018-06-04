@@ -4,7 +4,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Install wstool and rosdep
 sudo apt-get update
-sudo apt-get install -y python-wstool python-rosdep ninja-build
+sudo apt-get install -y python-wstool python-rosdep ninja-build libgoogle-glog-dev
 
 # Setup src files
 wstool init src
